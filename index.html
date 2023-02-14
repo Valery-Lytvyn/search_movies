@@ -5,21 +5,38 @@
    <meta charset="UTF-8" />
    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
-   <link rel="icon" href="img/logo/smile.svg" />
+   <link rel="icon" href="img/logo/favicon.png" />
    <link rel="stylesheet" href="css/reset.css" />
-   <link rel="stylesheet" href="css/main.css" />
-   <title>hello_js</title>
+   <link rel="stylesheet" href="css/main.css">
+   <title>search movies</title>
 </head>
 
 <body>
-   <div class="wrapper">
-      <div class="container">
-        
+   <div class="searchMovies">
+
+      <div class="wrapper">
+         <form class="inputSection" name="form">
+            <input class="inputSearch" name="inputSearch" placeholder="enter the name of the movie"> </input>
+         </form>
+
+         <form class="radioSection" name="radioSection">
+            <input type="radio" name="typeMovie" id="movie" value="movie"><label for="movie"> movie</label>
+            <input type="radio" name="typeMovie" id="series" value="series"><label for="series"> series</label>
+            <input type="radio" name="typeMovie" id="episode" value="episode"><label for="episode"> episode</label>
+         </form>
+
+         <div class="buttonSection">
+            <button class="buttonSearch button" id="searchFilm">Search</button>
+            <button class="buttonClear button">clear search results</button>
+         </div>
+
+         <div class="resultsSearch"> </div>
+
       </div>
    </div>
-   <script src="js/script.js">
-   </script>
+
+   <script src="js/script.js"></script>
+
 </body>
 
 </html>
